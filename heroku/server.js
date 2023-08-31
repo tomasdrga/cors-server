@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 corsProxy.createServer({
     originWhitelist: [
       'http://localhost:3000',
-      'https://ekosystem.staging.slovensko.digital'
+      'https://ekosystem.staging.slovensko.digital',
       'https://ekosystem.slovensko.digital'
     ],
     requireHeader: ['origin', 'x-requested-with'],
